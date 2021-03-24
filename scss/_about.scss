@@ -1,0 +1,283 @@
+
+// 關於丰益
+.chose_area{
+    margin-top: 110px;
+    padding: 90px 0px 0px 0px;
+    @media #{$mobile-device} {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+    }
+    @media #{$tablet_device}{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @media #{$mid_device}{
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+        
+     .line{
+            width: 180px;
+            height: 2px;
+            background-color: $line_color;
+            margin: 0 auto;
+            @media #{$mobile_device,$tablet_device}{
+                margin-top: 10px;
+                width: 30%;
+            }
+        }
+    .About_info{
+        //title
+        h3{
+            margin: 0 auto;
+            font-size: $textTitle_h3_size;
+            // line-height: 70px;
+            font-weight: 300 ;
+            color: $text_title;
+            @media #{$mobile_device}{
+                font-size: $mobile-h3-fontsize;
+                line-height: 40px;
+                text-align: center;
+            }
+            @media #{$tablet_device}{
+                font-size: 38px;
+                line-height: 50px;
+            }
+            @media #{$mid_device}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        h6{
+            font-size:$textSub_h6_size;
+            color: $text_sub;
+            width: 70%;
+            line-height: 100px;
+            margin: 0 auto;
+        }
+        p{
+            font-size: $text_size;
+            line-height: 45px;
+            color: $text;
+            margin: 0 auto;
+            width: 70%;
+            margin-bottom: 30px;
+            @media #{$tablet_device},#{$mobile-device}{
+               width: 90%; 
+            }
+        }
+       
+    }
+    .features_info{
+           margin-top: 50px;
+           text-align: center;
+        //    padding: 20px;
+           width: 100%;
+           height: auto;
+           background-image: url(../img/about/about_2.jpg);
+           background-size:cover;
+           background-position: center center;
+           position: relative;
+           @media #{$mobile_device}{
+                background-image: url(../img/about/about_sm.jpg);
+                background-size:cover;
+                background-position: center center;
+            }
+           h3{
+            font-size: $textTitle_h3_size;
+            line-height: 70px;
+            font-weight: 300 ;
+            color: $white_color;
+            margin: 0 auto;
+            @media #{$mobile_device}{
+                font-size: $mobile-h3-fontsize;
+                line-height: 40px;
+                text-align: center;
+            }
+            @media #{$tablet_device}{
+                font-size: 38px;
+                line-height: 50px;
+            }
+            @media #{$mid_device}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+          }
+           .hover{
+             position: absolute;
+             bottom: 0;
+             border: 1px solid $white_color;
+             height: 300px;
+             box-shadow: 1px 1px 2px 2px rgba(62, 64, 75, 0.137);
+             p{
+                 display: block;
+             }
+            }
+    }
+
+    #features{
+        padding: 50px 0px;
+
+        .hero-grid {
+	position: relative;
+    display: flex;
+    flex-wrap: wrap;
+	// background: #ccc;
+    cursor: pointer;
+  // will need to be changed
+	height: 350px;
+    // margin: 15px;
+        }
+
+        .features_content {
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            // margin-top: 120px;
+            @media #{$mobile_device,$tablet_device}{
+             text-align: center;
+             border: 1px solid $white_color;
+             padding: 10px;
+             margin: 20px;
+             height: auto;
+             h5 {
+            display: inline-block;
+            color: $line_color;
+            font-size:$textSub_h5_size;
+            font-weight: 500;
+            margin-top: 30px;
+            }
+            h6 {
+             color: $white_color;
+             font-size:18px;
+             font-weight: 400;
+             line-height: 30px;
+              margin-top: 20px;
+            }
+            p{
+               color: $white_color;
+               font-size:$text_size;
+               font-weight: 300;
+               margin-top: 20px;
+               width: 80%;
+               display: inline-block;
+              //  line-height: 25px;
+              }
+
+             }
+            }
+            h5 {
+            display: inline-block;
+            color: $line_color;
+            font-size:$textSub_h5_size;
+            font-weight: 500;
+            }
+            h6 {
+             color: $white_color;
+             font-size:18px;
+             font-weight: 400;
+             line-height: 30px;
+              margin-top: 20px;
+            }
+            p{
+               color: $white_color;
+               font-size:$text_size;
+               font-weight: 300;
+               margin-top: 20px;
+              //  line-height: 25px;
+              //  display: none;
+              }
+
+             }
+
+        .hero-grid-content::before,
+        .hero-grid-content::after {
+        	pointer-events: none;
+        }
+
+        // effect start
+
+        .effect-target {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,100px,0);
+    @media #{$mobile_device,$tablet_device}{
+    -webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-100,0);
+        }
+    }
+        .effect-target {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+        }
+
+        .effect-text {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+    @media #{$mobile_device,$tablet_device}{
+    color: rgba(255,255,255,0.8);
+	opacity: 1;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+        }
+        }
+
+
+        .effect-move:hover {
+	border: 1px solid $white_color;
+        }
+        .effect-move:hover .effect-text {
+	opacity: 1;
+        }
+
+        .effect-move:hover .effect-target {
+        	-webkit-transform: translate3d(0,0,0);
+        	transform: translate3d(0,40px,0);
+        }
+
+        .effect-move:hover .effect-text {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+    // transform: translate3d(0,-100px,0);
+  
+    }
+}
+
+
+
+// [data-aos="new-animation"] {
+//   opacity: 0;
+//   transform: translateX(100px);
+//   transition-property: transform, opacity;
+
+//   &.aos-animate {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+
+//  @media #{$mobile_device}{
+//     opacity: 0;
+//     transform: translateX(0px);
+//    transition-property: transform, opacity;
+
+//   &.aos-animate {
+//     opacity: 1;
+//     transform: translateX(0px);
+//   }
+// }
+//  @media #{$mid_device}{
+//     opacity: 0;
+//     transform: translateX(0px);
+//    transition-property: transform, opacity;
+
+//   &.aos-animate {
+//     opacity: 1;
+//     transform: translateX(0px);
+//   }
+// }
+// }
+

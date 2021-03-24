@@ -1,0 +1,440 @@
+.service_area{
+    background: #F5FBFF;
+    // margin-top: 100px;
+    padding: 90px 0 90px 0;
+    text-align: center;
+    .ser_items,.ser_items3,.ser_items4,.ser_items5,.ser_items6{
+      cursor: pointer;
+    }
+    @media #{$mobile-device,$tablet_device} {
+        padding: 30px 0 50px 0;
+    }
+    h3{
+            margin: 0 auto;
+            font-size: $textTitle_h3_size;
+            line-height: 70px;
+            font-weight: 300 ;
+            color: $text_title;
+            @media #{$mobile_device}{
+                font-size: $mobile-h3-fontsize;
+                line-height: 40px;
+                text-align: center;
+            }
+            @media #{$tablet_device}{
+                font-size: 38px;
+                line-height: 50px;
+            }
+            @media #{$mid_device}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+    }
+    .line{
+            width: 180px;
+            height: 2px;
+            background-color: $line_color;
+            margin: 0 auto;
+            @media #{$mobile_device,$tablet_device}{
+                margin-top: 10px;
+                width: 30%;
+            }
+    }
+    /*數位轉型*/
+    .ser_items {
+          background: url('../img/case/ser_1.jpg') no-repeat;
+          background-position: center center;
+          background-size: cover;
+          width: 90%;
+          height: 200px;
+          overflow: hidden !important;
+          position: relative;
+           @media #{$mobile_device,$tablet_device}{
+                margin-top: 10px;
+                width: 100%;
+            }
+        .mask {
+          opacity: 0;
+          transform: translateY(0px);
+          // background-color: rgba(228, 228, 228, 0.5);
+          transition: all 0.5s ease-in-out;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 0rem;
+          overflow: hidden;
+          @media #{$mobile_device,$tablet_device}{
+            opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+            }
+            }
+         h6 {
+             text-align: center;
+          transform: translateY(-180px);
+          opacity: 1;
+          transition: all 0.5s ease-in-out;
+          font-size: $textSub_h6_size;
+          font-family: 'Noto Sans TC';
+          font-weight: 300;
+          color: $white_color;
+           @media #{$mobile_device,$tablet_device}{
+            transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+          }
+        }
+        &:hover .mask {
+          opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+        }
+        &:hover h6{
+          transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+        }
+    }
+    /*數位轉型*/
+    .ser_items2 {
+          // background: url('../img/fonyitek_logo.png') no-repeat;
+          background-color: rgb(213, 235, 255);
+          width: 90%;
+          height: 200px;
+          overflow: hidden !important;
+          position: relative;
+           @media #{$mobile_device,$tablet_device}{
+                display: none;
+            }
+          img{
+          width: 80%;
+          height: 200px;
+          overflow: hidden !important;
+          position: absolute;
+          left: 20px;
+          object-fit: contain;
+          background-position: center center;
+          background-size: contain;
+          }
+        .mask {
+          opacity: 0;
+          transform: translateY(0px);
+          // background-color: rgba(228, 228, 228, 0.5);
+          transition: all 0.5s ease-in-out;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 0rem;
+          overflow: hidden;
+            }
+         h6 {
+             text-align: center;
+          transform: translateY(-180px);
+          opacity: 1;
+          transition: all 0.5s ease-in-out;
+          font-size: $textSub_h6_size;
+          font-family: 'Noto Sans TC';
+          font-weight: 300;
+          color: $white_color;
+          // position: absolute;
+        }
+        &:hover .mask {
+          opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+        }
+        &:hover h6{
+          transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+        }
+    }
+    /*雲端應用*/
+    .ser_items3 {
+          background: url('../img/case/ser_2.jpg') no-repeat;
+          background-position: center center;
+          background-size: cover;
+          width: 90%;
+          height: 200px;
+          overflow: hidden !important;
+          position: relative;
+          @media #{$mobile_device,$tablet_device}{
+                margin-top: 10px;
+                width: 100%;
+            }
+        .mask {
+          opacity: 1;
+          transform: translateY(20px);
+          // background-color: rgba(228, 228, 228, 0.5);
+          transition: all 0.5s ease-in-out;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 0rem;
+          overflow: hidden;
+          @media #{$mobile_device,$tablet_device}{
+            opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+            }
+            }
+         h6 {
+             text-align: center;
+          transform: translateY(-180px);
+          opacity: 1;
+          transition: all 0.5s ease-in-out;
+          font-size: $textSub_h6_size;
+          font-family: 'Noto Sans TC';
+          font-weight: 300;
+          color: $white_color;
+          @media #{$mobile_device,$tablet_device}{
+            transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+          }
+        }
+        &:hover .mask {
+          opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+        }
+        &:hover h6{
+          transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+        }
+    }
+    /*系統維運服務(MA)*/
+    .ser_items4 {
+          background: url('../img/case/ser_3.jpg') no-repeat;
+          background-position: center center;
+          background-size: cover;
+          width: 90%;
+          height: 200px;
+          overflow: hidden !important;
+          position: relative;
+          @media #{$mobile_device,$tablet_device}{
+                margin-top: 10px;
+                width: 100%;
+            }
+        .mask {
+          opacity: 0;
+          transform: translateY(0px);
+          // background-color: rgba(228, 228, 228, 0.5);
+          transition: all 0.5s ease-in-out;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 0rem;
+          overflow: hidden;
+          @media #{$mobile_device,$tablet_device}{
+            opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+            }
+            }
+         h6 {
+             text-align: center;
+          transform: translateY(-180px);
+          opacity: 1;
+          transition: all 0.5s ease-in-out;
+          font-size: $textSub_h6_size;
+          font-family: 'Noto Sans TC';
+          font-weight: 300;
+          color: $white_color;
+          @media #{$mobile_device,$tablet_device}{
+            transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+          }
+        }
+        &:hover .mask {
+          opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+        }
+        &:hover h6{
+          transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+        }
+    }
+    /*專案導入服務*/
+    .ser_items5 {
+          background: url('../img/case/ser_4.jpg') no-repeat;
+          background-position: center center;
+          background-size: cover;
+          width: 90%;
+          height: 200px;
+          overflow: hidden !important;
+          position: relative;
+          @media #{$mobile_device,$tablet_device}{
+                margin-top: 10px;
+                width: 100%;
+            }
+        .mask {
+          opacity: 0;
+          transform: translateY(0px);
+          // background-color: rgba(228, 228, 228, 0.5);
+          transition: all 0.5s ease-in-out;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 0rem;
+          overflow: hidden;
+          @media #{$mobile_device,$tablet_device}{
+            opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+            }
+            }
+         h6 {
+             text-align: center;
+          transform: translateY(-180px);
+          opacity: 1;
+          transition: all 0.5s ease-in-out;
+          font-size: $textSub_h6_size;
+          font-family: 'Noto Sans TC';
+          font-weight: 300;
+          color: $white_color;
+          @media #{$mobile_device,$tablet_device}{
+            transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+          }
+        }
+        &:hover .mask {
+          opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+        }
+        &:hover h6{
+          transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+        }
+    }
+    /*專案導入服務*/
+    .ser_items6 {
+          background: url('../img/case/ser_5.jpg') no-repeat;
+          background-position: center center;
+          background-size: cover;
+          width: 90%;
+          height: 200px;
+          overflow: hidden !important;
+          position: relative;
+          @media #{$mobile_device,$tablet_device}{
+              margin-top: 10px;
+              width: 100%;
+          }
+        .mask {
+          opacity: 0;
+          transform: translateY(0px);
+          // background-color: rgba(228, 228, 228, 0.5);
+          transition: all 0.5s ease-in-out;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 0rem;
+          overflow: hidden;
+          @media #{$mobile_device,$tablet_device}{
+            opacity: 1;
+            transform: translateY(20px);
+            background-color: #FFFFFFa8;
+            height: 30%;
+          }
+            }
+         h6 {
+            text-align: center;
+            transform: translateY(-180px);
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+            font-size: $textSub_h6_size;
+            font-family: 'Noto Sans TC';
+            font-weight: 300;
+            color: $white_color;
+          @media #{$mobile_device,$tablet_device}{
+            transform: translateY(10px);
+            opacity: 1;
+            font-size: $textSub_h6_size;
+            letter-spacing: 2px;
+            font-family: 'Noto Sans TC';
+            font-weight: 400;
+            color: $dark_gray;
+            transition-delay: 0.1s;
+          }
+        }
+        &:hover .mask {
+          opacity: 1;
+          transform: translateY(20px);
+          background-color: #FFFFFFa8;
+          height: 30%;
+        }
+        &:hover h6{
+          transform: translateY(10px);
+          opacity: 1;
+          font-size: $textSub_h6_size;
+          letter-spacing: 2px;
+          font-family: 'Noto Sans TC';
+          font-weight: 400;
+          color: $dark_gray;
+          transition-delay: 0.1s;
+        }
+    }
+    
+}
+
+// 第1張

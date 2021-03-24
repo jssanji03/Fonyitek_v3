@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap');
+
+// font-family
+$font1:  'Noto Sans TC', sans-serif;
+$font2:  'Poppins', sans-serif;
+$font3:  'Montserrat', sans-serif;
+
+// fonts-size
+$textTitle_h3_size:46px;
+$textSub_h5_size:28px;
+$textSub_h6_size:20px;
+$text_size:16px;
+
+
+//font-color
+$text_title:#1D4A9E;
+$text_sub:#2f466d;
+$text: #666666;
+$dark_gray:rgb(51, 51, 51);
+
+$white_color:#fff;
+$line_color:#ffd900;
+
+
+$heading-color:#1F1F1F;
+$gray-color: #bebebe;
+$gray-color-2: #bdbdbd;
+
+$theme-color: #1F1F1F;
+$theme-color2: #ff5e13;
+
+$gray-color3:#5c5c5c;
+
+
+$font_1: #666666;
+$font_2: #646464;
+$font_3: #7f7f7f;
+$font_4: #8a8a8a;
+$font_5: #999999;
+$font_6: #666666;
+$font_7: #5c5c5c;
+$border_color: #fdcb9e;
+$footer_bg: #303030;
+$sidebar_bg: #fbf9ff;
+
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$tab:'(max-width: 991px)';
+$small_mobile:'(max-width: 576px)';
+$xs_mobile:'(max-width: 420px)';
+$sm_mobile:'only screen and (min-width: 421px) and (max-width: 575px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1440px)';
+$extra_big_screen: 'only screen and (min-width: 1200px) and (max-width: 3640px)';
+
+// ,,,,,,,,,,,
+$btn_bg: #FF3414;
+$btn_hover: #f5790b;
+$section_bg: #f7f7f7;
+$section_bg_1: #454545;
+$heading_color: #191d34;
+$heading_color2: #ff8b23;

@@ -1,0 +1,145 @@
+// 聯絡我 
+.contact_location{
+    background: #F5FBFF;
+    width: 100%; 
+    padding: 90px 0;
+     @media #{$mobile_device}{
+        height: 1000px;
+        }
+     @media #{$tablet_device}{
+        height: auto;
+        }
+     .line{
+            width: 180px;
+            height: 2px;
+            background-color: $line_color;
+            margin: 0 auto;
+            @media #{$mobile_device,$tablet_device}{
+                margin-top: 10px;
+                width: 30%;
+            }
+        }
+    .contact_info{
+        //title
+        text-align: center;
+        h3{
+            margin: 0 auto;
+            font-size: $textTitle_h3_size;
+            line-height: 70px;
+            font-weight: 300 ;
+            color: $text_title;
+            @media #{$mobile_device}{
+                font-size: $mobile-h3-fontsize;
+                line-height: 40px;
+                text-align: center;
+            }
+            @media #{$tablet_device}{
+                font-size: 38px;
+                line-height: 50px;
+            }
+            @media #{$mid_device}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        h6{
+            font-size:$textSub_h6_size;
+            color: $text_sub;
+            width: 70%;
+            line-height: 100px;
+            margin: 0 auto;
+            @media #{$mobile_device,$tablet_device}{
+                line-height: 40px;
+                margin-top: 20px;
+            }
+        }
+        @media #{$mobile-device} {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @media #{$tablet_device}{
+            padding-left: 30px;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+        @media #{$mid_device}{
+            padding-left: 30px;
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
+        @media #{$large_device}{
+            padding-left: 30px;
+            padding-top: 0;
+        }
+        
+    }
+    @media #{$mobile_device} {
+        background: #F5FBFF;
+    width: 100%; 
+    height: auto;
+    padding: 50px 50px;
+        // .logobox{
+        //     display: flex;
+        //     // justify-content: center;
+        //     margin: 0 auto;
+        //     text-align: center;
+        // }
+    }
+    .location_left{
+        @media #{$mobile_device}{
+            margin: 0 auto;
+            padding: 20px;
+            > .logo{
+            width: 250px ;
+            margin: 0 auto;
+        }
+        
+        }
+        .logo{
+            margin-bottom: 40px;
+            width: 200px;
+            margin: 0 auto;
+        }
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 6px;
+                a{
+                    width: 38px;
+                    height: 38px;
+                    @include border-radius(50%);
+                    background: #3B5797;
+                    display: inline-block;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 38px;
+                    font-size: 15px;
+                }
+                &:nth-child(2) a{
+                    background: #DB4337;
+                }
+                &:nth-child(3) a{
+                    background: #00ACED;
+                }
+                &:nth-child(4) a{
+                    background: #BB0000;
+                }
+            }
+        }
+    }
+    .single_location{
+        h3{
+            font-size: 22px;
+            color: #001D38;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        p{
+            color: #596672;
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}

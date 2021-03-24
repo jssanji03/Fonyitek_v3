@@ -1,0 +1,203 @@
+
+//產品介紹
+.contact_action_area{
+    background-image: url(../img/oracle/office.jpg);
+    height: 600px;
+    background-color: #001d389c;
+    // 設置背景混和模式為相乘模式
+    background-blend-mode: multiply;
+    // background-attachment: fixed;
+    overflow-y:scroll;
+    padding: 90px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    @media #{$tablet_device} {
+    background-image: url(../img/oracle/office.jpg);
+    height: 600px;
+    background-color: #001d389c;
+    background-blend-mode: multiply;
+    overflow-y:scroll;
+    padding: 90px 0;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: top center;
+    }
+    @media #{$mobile_device} {
+    background-image: url(../img/oracle/office.jpg);
+    height: 400px;
+    background-color: #001d389c;
+    background-blend-mode: multiply;
+    overflow-y:scroll;
+    padding: 90px 0;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: top center;
+    }
+    .product_title{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+     @media #{$mobile_device}{
+        font-size: $mobile-h3-fontsize;
+        line-height: 40px;
+        text-align: center;
+     }
+    }
+    .line{
+            width: 180px;
+            height: 2px;
+            background-color: $line_color;
+            margin: 0 auto;
+             @media #{$mobile_device,$tablet_device}{
+                margin-top: 10px;
+                width: 30%;
+            }
+        }
+    .action_heading{
+        margin-top: 10px;
+        @media #{$tablet_device,$mobile_device} {
+             margin-top: 50px;
+        }
+        .oracleLogo{
+          width: 300px;
+          height: 100px;
+          background-image: url(../img/oracle/Oracle-NetSuite-w.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          }
+        .oracleText1{
+          margin-top: 30px;
+        line-height: 40px;
+         font-size: 15px;
+        }
+    }
+    .oracleMovie{
+        width: 100%;
+        height: 300px;
+        background-image: url(../img/oracle/OracleMovie_01.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0px 3px 6px #000c18;
+        @media #{$mobile_device} {
+            margin-top: 20px;
+        }
+    }
+    .oracleMovie2{
+        margin-top: 200px;
+        @media #{$tablet_device,$mobile_device} {
+             margin-top: 50px;
+        }
+        .oracleTitle{
+            font-family:  $font3;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 50px;
+            color: #DB4337;
+            margin-top: 0px;
+        @media #{$tablet_device,$mobile_device} {
+             font-size: 28px;
+        }
+        }
+        .oracleText1{
+        margin-top: 30px;
+        line-height: 40px;
+         font-size: 15px;
+         @media #{$tablet_device,$mobile_device} {
+            line-height: 30px;
+        }
+        }
+    }
+    .oracleMovie3{
+        margin-top: 200px;
+       @media #{$tablet_device,$mobile_device} {
+             margin-top: 50px;
+        }
+        .oracleTitle{
+            font-family:  $font3;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 50px;
+            color: #DB4337;
+            @media #{$tablet_device,$mobile_device} {
+             font-size: 28px;
+        }
+        }
+        .oracleText1{
+        margin-top: 30px;
+        line-height: 40px;
+         font-size: 15px;
+         @media #{$tablet_device,$mobile_device} {
+            line-height: 30px;
+        }
+        }
+    }
+    .oracleMovie4{
+        margin-top: 200px;
+        @media #{$tablet_device,$mobile_device} {
+             margin-top: 50px;
+        }
+        .oracleTitle{
+            font-family:  $font3;
+            font-size: 35px;
+            font-weight: 600;
+            line-height: 50px;
+            color: #DB4337;
+            @media #{$tablet_device,$mobile_device} {
+             font-size: 28px;
+        }
+        }
+        .oracleText1{
+        margin-top: 30px;
+        line-height: 40px;
+         font-size: 15px;
+         @media #{$tablet_device,$mobile_device} {
+            line-height: 30px;
+        }
+        }
+    }
+    @media #{$mobile_device} {
+        padding: 50px 0;
+         .oracleLogo{
+          width: 100%;
+          height: 100px;
+          background-image: url(../img/oracle/Oracle-NetSuite-w.png);
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          margin: 0 auto;
+          }
+    }
+    
+    .action_heading{
+        @media #{$mobile_device}{
+            text-align: center;
+        }
+        h3{
+            font-size: 46px;
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 13px;
+            @media #{$mobile_device} {
+                font-size: 25px;
+                
+            }
+            @media #{$tablet_device} {
+                font-size: 30px;
+            }
+            @media #{$mid_device} {
+                font-size: 30px;
+            }
+        }
+        p{
+            color: #EAEAEA;
+            font-size: 18px;
+            line-height: 40px;
+            margin-bottom: 0;
+        }
+        @media #{$tablet_device}{
+            text-align: center;
+        }
+    }
+}
