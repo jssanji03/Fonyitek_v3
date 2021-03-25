@@ -1,27 +1,16 @@
 
 
 $(function(){
-  $("a").on('click', function(event) {
-    if (this.hash != "") {
-      event.preventDefault();
-      const hash = $(this).attr('href');
-      const linkScroll = $(hash).offset().top;
-      // 控制 html,body 執行 animate 動畫, 讓捲出的距離 = 目前錨點位置的 offset().top 座標
-      $('html, body').stop().animate({ scrollTop: linkScroll-80 }, 800);
-      console.log(linkScroll);
-    } 
+  $("a").on('click', function () {
+    const hash = $(this).attr('href');
+    const linkScroll = $(hash).offset().top;
+     $('html,body').stop().animate({ scrollTop: linkScroll-80 }, 800);
+    
   }); 
 });
 
-
     
 $(function () {
-  
-  
-  
- 
-
-
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if( scroll >= 70){

@@ -24,7 +24,6 @@ $(function(){
 
 $(function(){
   //for menu active class
- 
   $('#main').on('click', function (event) {
    $('.navbar-collapse').collapse('hide');
 	});
@@ -32,6 +31,11 @@ $(function(){
    $('.navbar-collapse').collapse('hide');
 	});
 });
+
+function link() {
+  var url = "index.html";//进这个页面的url
+var id = url.split("#")['about'];//url例如： www.baidu.com#maodian(这个是你锚点的位置)
+}
 
 
 

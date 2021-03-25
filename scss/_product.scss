@@ -2,40 +2,40 @@
 //產品介紹
 .contact_action_area{
     background-image: url(../img/oracle/office.jpg);
-    height: 600px;
     background-color: #001d389c;
+    background-attachment: fixed;
     // 設置背景混和模式為相乘模式
     background-blend-mode: multiply;
-    // background-attachment: fixed;
-    overflow-y:scroll;
-    padding: 90px 0;
+    height: auto;
+    padding-top: 90px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     @media #{$tablet_device} {
     background-image: url(../img/oracle/office.jpg);
-    height: 600px;
+    height: auto;
     background-color: #001d389c;
     background-blend-mode: multiply;
     overflow-y:scroll;
-    padding: 90px 0;
+    padding-top: 90px;
     background-repeat: no-repeat;
     background-size: 200%;
     background-position: top center;
     }
     @media #{$mobile_device} {
     background-image: url(../img/oracle/office.jpg);
-    height: 400px;
+    height: auto;
     background-color: #001d389c;
     background-blend-mode: multiply;
     overflow-y:scroll;
-    padding: 90px 0;
+    padding-top: 90px;
     background-repeat: no-repeat;
     background-size: 200%;
     background-position: top center;
     }
     .product_title{
     color: #FFFFFF;
+    margin-top: 50px;
     font-size: 48px;
     font-weight: 400;
     text-align: center;
@@ -135,6 +135,7 @@
     }
     .oracleMovie4{
         margin-top: 200px;
+        margin-bottom: 200px;
         @media #{$tablet_device,$mobile_device} {
              margin-top: 50px;
         }
@@ -158,7 +159,6 @@
         }
     }
     @media #{$mobile_device} {
-        padding: 50px 0;
          .oracleLogo{
           width: 100%;
           height: 100px;

@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="./plugins/daterangepicker-master/daterangepicker.css">
     <!-- Plugins -->
     <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./plugins/bootstrap/">
     <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./plugins/animate/animate.css">
     <!-- CSS here -->
@@ -80,14 +79,17 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#about">關於丰益</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#service">服務項目</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#oracle">產品介紹</a>
-                                    </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item d-lg-block d-none">
                                         <a class="nav-link" href="#business">經營團隊</a>
+                                    </li>
+                                    <li class="nav-item d-block d-lg-none">
+                                        <a class="nav-link" href="#business_mobile">經營團隊</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="service.html">服務項目</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="product.html">產品介紹</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#contact">聯絡我們</a>
@@ -121,7 +123,7 @@
     </section>
     <!-- slider_area_end -->
     <!-- About  -->
-    <div class="chose_area" id="about">
+    <div class="chose_area" id="about" name="about">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -171,7 +173,9 @@
         </div>
         </div>
     </div>
-    <div class="team d-lg-block d-none " id="business">
+
+    <!-- Teams -->
+    <div class="team d-lg-block d-none" id="business">
     <div class="container">
         <div class="row ">
             <div class="col-12 text-center">
@@ -181,27 +185,21 @@
                 </div>
             </div>
         </div>
-        <div class="row " id="team_members">
-            <div class="col-lg-8 col-sm-12">
-                <div class="row justify-content-center offset-xl-2 offset-lg-0">
-                    <div class="teamMember">
+        <div class="row" id="team_members">
+            <div class="col-lg-12 col-sm-12">
+                <div class="row justify-content-center">
+                    <div class="teamMember" style="margin-right: 50px;">
                         <img src="./img/team/1.JPG">
                         <div class="info">
                             <span class="name">Jimmy Lu<span class="title">Presales</span></span>
                         </div>
-                    </div>
-                    <div class=" teamMember2">
-                        <img src="./img/team/2.JPG">
-                        <div class="info">
-                            <span class="name">Pingyi Chen<span class="title">Developer</span></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center offset-xl-2 offset-lg-0">
-                    <div class="teamMember3">
-                        <img src="./img/team/3.JPG">
-                        <div class="info">
-                            <span class="name">Pohua Chen<span class="title">Consultant</span></span>
+                        <div class="teamMember_show">
+                            <div class="member_ex">
+                                <span class="name">Jimmy Lu<span class="title">Presales</span></span>
+                                <p>擁有近10年的產品銷售經驗與5年以上的ERP專案經理與顧問經驗，
+                                    擅長於訪談階段確切找出客戶的真實問題並矯正其管理流程，以提升產業競爭力，
+                                    負責過產業別涵括有食品加工業、餐飲業、零售業、國際貿易業、化學工業、鞋業製造、工業設備製造等，並且擁有多項ERP認證資格。</p>
+                            </div>
                         </div>
                     </div>
                     <div class="teamMember4">
@@ -209,41 +207,22 @@
                         <div class="info">
                             <span class="name">Potter Chen<span class="title">Consultant</span></span>
                         </div>
+                        <div class="teamMember_show">
+                            <div class="member_ex4">
+                                <span class="name">Potter Chen<span class="title">Consultant</span></span>
+                                <p>擁有2年的雲端ERP產品銷售經驗與4年以上的ERP專案導入顧問經驗，
+                                    擅長於規劃導入建議與架構，並有效將客戶需求及流程優化實現於ERP系統中，
+                                    負責過產業別涵括有餐飲業、硬體零售業、食材物流業、線上遊戲業等。</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-            </div>
-            <div class="col-lg-4 col-sm-12 teamMember_show">
-                <div class="show_before d-none d-md-block"></div>
-                <div class="member_ex">
-                    <span class="name">Jimmy Lu<span class="title">Presales</span></span>
-                    <p>擁有近10年的產品銷售經驗與5年以上的ERP專案經理與顧問經驗，
-                        擅長於訪談階段確切找出客戶的真實問題並矯正其管理流程，以提升產業競爭力，
-                        負責過產業別涵括有食品加工業、餐飲業、零售業、國際貿易業、化學工業、鞋業製造、工業設備製造等，並且擁有多項ERP認證資格。</p>
-                </div>
-                <div class="member_ex2">
-                    <span class="name">Pingyi Chen<span class="title">Developer</span></span>
-                    <p>具兩年 ERP 系統建置及程式開發專案導入經驗，
-                        並於系統整合與 BPM 企業流程導入及程式開發有五年以上之導入經歷。</p>
-                </div>
-                <div class="member_ex3">
-                    <span class="name">Pohua Chen<span class="title">Consultant</span></span>
-                    <p>擁有1年的雲端架構規劃經驗，協助將地端基礎架構移轉至雲端環境，
-                        建立快速且有彈性的雲端架構。負責過的產業別有電力機械製造業、商品批發代理業等。</p>
-                </div>
-                <div class="member_ex4">
-                    <span class="name">Potter Chen<span class="title">Consultant</span></span>
-                    <p>擁有2年的雲端ERP產品銷售經驗與4年以上的ERP專案導入顧問經驗，
-                        擅長於規劃導入建議與架構，並有效將客戶需求及流程優化實現於ERP系統中，
-                        負責過產業別涵括有餐飲業、硬體零售業、食材物流業、線上遊戲業等。</p>
-                </div>
-                
             </div>
         </div>
     </div>
     </div>
     <!--Mobile Area-->
-    <div class="team_mobile d-block d-lg-none" id="business">
+    <div class="team_mobile d-block d-lg-none"  id="business_mobile">
         <div class="container-fluid px-5">
             <div class="row ">
                 <div class="col-12 text-center">
@@ -265,34 +244,6 @@
                     <p>擁有近10年的產品銷售經驗與5年以上的ERP專案經理與顧問經驗，
                                 擅長於訪談階段確切找出客戶的真實問題並矯正其管理流程，以提升產業競爭力，
                                 負責過產業別涵括有食品加工業、餐飲業、零售業、國際貿易業、化學工業、鞋業製造、工業設備製造等，並且擁有多項ERP認證資格。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-5" id="team_members">
-                <div class="col-sm-5 teamMember">
-                    <img src="./img/team/2.JPG">
-                    <div class="info">
-                        <span class="name">Pingyi Chen<span class="title">Developer</span></span>
-                    </div>
-                </div>
-                <div class="col-sm-7 teamMember_show">
-                    <div class="member_ex2">
-                        <p>具兩年 ERP 系統建置及程式開發專案導入經驗，
-                            並於系統整合與 BPM 企業流程導入及程式開發有五年以上之導入經歷。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center mt-5" id="team_members">
-                <div class="col-sm-5 teamMember">
-                    <img src="./img/team/3.JPG">
-                    <div class="info">
-                        <span class="name">Pohua Chen<span class="title">Consultant</span></span>
-                    </div>
-                </div>
-                <div class="col-sm-7 teamMember_show">
-                    <div class="member_ex3">
-                        <p>擁有1年的雲端架構規劃經驗，協助將地端基礎架構移轉至雲端環境，
-                            建立快速且有彈性的雲端架構。負責過的產業別有電力機械製造業、商品批發代理業等。</p>
                     </div>
                 </div>
             </div>
@@ -343,13 +294,6 @@
                     <p>+886-4-24652898<br>
                         fonyitek@fonyitek.com</p>
                     </div>
-                <!-- <div class="col-xl-5 col-md-3 col-sm-12 logobox">
-                    <div class="single_location mt-3">
-                        <h3> <img src="img/icon/support.svg" alt=""> 聯絡方式</h3>
-                        <p>+886-4-24652898<br>
-                            fonyitek@fonyitek.com</p>
-                    </div>
-                </div> -->
             </div>
             <div class="row mt-5">
                 <form  style="width: 100%;">
@@ -413,11 +357,9 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;
                             <script>document.write(new Date().getFullYear());</script> 丰益科技股份有限公司 Fonyitek Technology
                             Inc. All Rights Reserved.
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
                 </div>
@@ -441,12 +383,10 @@
     <script src="./plugins/smtp.js"></script>
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
-    <script src="js/plugins.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({ 

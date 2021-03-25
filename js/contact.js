@@ -4,9 +4,6 @@
 $(function () { 
   $('input[name="datetimespick"]').daterangepicker({
     timePicker: true,
-    singleDatePicker: true,
-    // startDate: moment().startOf('hour'),
-    // endDate: moment().startOf('hour').add(32, 'hour'),
     locale: {
       format: 'YYYY/MM/DD hh:mm A'
     }
@@ -18,7 +15,7 @@ $( function() {
 });
   
 
-    //宣告預設表單內容為空 （你想要的話也可以加東西）
+    //宣告預設表單內容為空 
     var initSubject='',initBody='';
  
     //按下傳送按鈕後執行
