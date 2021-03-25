@@ -22,7 +22,10 @@
     <link rel="stylesheet" href="./plugins/fontawesome-free/css/all.min.css">
     <!-- CSS here -->
     <link rel="stylesheet" href="./css/style.css">
-
+    <!-- date picker -->
+    <link rel="stylesheet" href="./plugins/datePicker/jquery-ui.min.css">
+    <link rel="stylesheet" href="./plugins/datePicker/jquery-ui.theme.css">
+    <link rel="stylesheet" href="./plugins/daterangepicker-master/daterangepicker.css">
     <!-- 結構化資料(Layout) -->
     <script type="application/ld+json">
             {
@@ -88,63 +91,85 @@
     </header>
     <!-- header-end -->
     <main id="main">
-        <!--/ 服務項目  -->
-        <div class="service_area" id="service">
+        <!-- contact_location  -->
+        <div class="contact_location" id="contact">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <h3>服務項目</h3>
+                    <div class="col-12 contact_info text-center">
+                        <h3>聯絡我們</h3>
                         <div class="line"></div>
+                        <h6>歡迎您提出企業需求與相關問題，讓我們有機會提供您優質的服務</h6>
                     </div>
                 </div>
-                <div class="row mt-50">
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        <div class="mt-5 ser_items" onclick="location.href='contact.html'">
-                            <div class="mask">
-                                <h6>數位轉型</h6>
-                            </div>
-
-                        </div>
+                <div class="row text-center">
+                    <div class="single_location col-lg-6 col-sm-12 text-lg-right text-sm-center">
+                        <h3><img src="img/icon/address.svg" alt=""> 公司地址</h3>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        <div class="mt-5 ser_items2" onclick="location.href='contact.html'">
-                            <img src="./img/fonyitek_logo.png">
-
-                        </div>
+                    <div class="single_location col-lg-6 col-sm-12 text-lg-left text-sm-center">
+                        <p>台中市西屯區科園路19號416室</p>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        <div class="mt-5 ser_items3" onclick="location.href='contact.html'">
-                            <div class="mask">
-                                <h6>雲端應用</h6>
-                            </div>
-                        </div>
+                    <div class="single_location col-lg-6 col-sm-12 text-lg-right text-sm-center">
+                        <h3> <img src="img/icon/support.svg" alt=""> 聯絡方式</h3>
+                    </div>
+                    <div class="single_location col-lg-6 col-sm-12 text-lg-left text-sm-center">
+                        <p>+886-4-24652898<br>
+                            fonyitek@fonyitek.com</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        <div class="mt-5 ser_items4" onclick="location.href='contact.html'">
-                            <div class="mask">
-                                <h6>系統維運服務(MA)</h6>
+                <div class="row mt-5">
+                    <form style="width: 100%;">
+                        <div class="row justify-content-start offset-lg-2">
+                            <div class="form-group col-lg-5 col-sm-12">
+                                <label for="CompanyNameInput">公司名稱</label>
+                                <input type="text" class="form-control" id="companyName" placeholder="">
+                            </div>
+                            <div class="form-group col-lg-5 col-sm-12">
+                                <label for="CompanyOptionInput">產業別</label>
+                                <input type="text" class="form-control" id="companyItem" placeholder="">
+                            </div>
+                            <div class="form-group col-lg-5 col-sm-12">
+                                <label for="NameInput">您的大名</label>
+                                <input type="text" class="form-control" id="userName" placeholder="">
+                            </div>
+                            <div class="form-group col-lg-5 col-sm-12">
+                                <label for="Support">職稱</label>
+                                <input type="text" class="form-control" id="userSupport" placeholder="">
+                            </div>
+                            <div class="form-group col-lg-5 col-sm-12">
+                                <label for="mobile">聯絡電話</label>
+                                <input type="tel" class="form-control" id="userMobile" placeholder="">
+                            </div>
+                            <div class="form-group col-lg-5 col-sm-12">
+                                <label for="contactemail">E-Mail</label>
+                                <input type="email" class="form-control" id="useremail" placeholder="">
+                            </div>
+                            <div class="form-group col-lg-5 col-sm-12">
+                                <label for="contactemail">預計導入時間</label>
+                                <div class="input-group mb-2">
+                                    <input type="text" class="form-control" placeholder="Username" name="datetimespick"
+                                        id="timepick">
+                                    <div class="input-group-append">
+                                        <div class="input-group-text"><i class="fas fa-calendar-alt"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-10 col-sm-12">
+                                <label for="exampleFormControlTextarea1">諮詢內容</label>
+                                <!-- <textarea class="form-control" id="bodytext" rows="5"></textarea> -->
+                                <textarea id="bodyText" name="your-message" cols="40" rows="5" aria-required="true"
+                                    aria-invalid="false" class="form-control" placeholder="你的訊息(Your Message)"
+                                    required></textarea>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        <div class="mt-5 ser_items5" onclick="location.href='contact.html'">
-                            <div class="mask">
-                                <h6>專案導入服務</h6>
-                            </div>
+                        <div class="row justify-content-center mt-3">
+                            <input type="button" value="送出訊息" class="btn-info btn" onclick="submitHandler();">
+                            <a id="mailTo"></a>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                        <div class="mt-5 ser_items6" onclick="location.href='contact.html'">
-                            <div class="mask">
-                                <h6>顧問諮詢</h6>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+        <!--/ contact_location  -->
 
 
 
@@ -173,31 +198,34 @@
         <!--/ footer end  -->
         <!-- Button trigger modal -->
     </main>
+<!-- jQuery-2.2.4 js -->
+<script src="./plugins/jquery/jquery-3.5.1.min.js"></script>
+<!-- datepicker -->
+<script src="./plugins/datePicker/jquery-ui.js"></script>
+<script src="./plugins/daterangepicker-master/moment.min.js"></script>
+<script src="./plugins/daterangepicker-master/daterangepicker.js"></script>
+<!-- Bootstrap js -->
+<script src="./plugins/bootstrap/popper.min.js"></script>
+<script src="./plugins/bootstrap/bootstrap.min.js"></script>
+<!--Email-->
+<script src="./plugins/smtp.js"></script>
+<!-- JS here -->
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="./plugins/aos/aos.js"></script>
+<script>
+    AOS.init({
+        disable: "phone",
+    });
 
-    <!-- jQuery-2.2.4 js -->
-    <script src="./plugins/jquery/jquery-3.5.1.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="./plugins/bootstrap/popper.min.js"></script>
-    <script src="./plugins/bootstrap/bootstrap.min.js"></script>
-    <!--Email-->
-    <script src="./plugins/smtp.js"></script>
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <!-- <script src="js/vendor/jquery-1.12.4.min.js"></script> -->
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script>
-        AOS.init({
-            disable: "phone",
-        });
-
-    </script>
-    <script src="js/scroll.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/team.js"></script>
-    <script src="js/contact.js"></script>
+</script>
+<script src="js/scroll.js"></script>
+<script src="js/main.js"></script>
+<script src="js/team.js"></script>
+<script src="js/contact.js"></script>
 
 </body>
 
